@@ -11,10 +11,9 @@ namespace Task1
         static void Main(string[] args)
         {
             short sht = 10;
-            object o = (object)sht;
-          
-
-            System.SByte shrt2 = (System.SByte)o;
+            object o = sht;
+            System.SByte shrt = (System.SByte)(short)o;
+            System.Console.WriteLine(shrt);
             System.Console.WriteLine(shrt.GetType());
         }
     }
