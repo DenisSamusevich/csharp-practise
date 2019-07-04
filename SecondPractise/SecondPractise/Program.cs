@@ -10,15 +10,19 @@ namespace SecondPractise
     {
         static void Main(string[] args)
         {
-            int x;
+            var daytime = DateTime.Now.TimeOfDay;
+            Console.WriteLine(daytime);
+            var time_hour = daytime.Hours; ;
+            Console.WriteLine(time_hour);
 
-            if (x => 9 & x <= 12)
+            if ((time_hour >= 9) & (time_hour <= 12))
                 Console.WriteLine("Good morning, guys");
-            else if (x => 12 & x <= 15)
+            else if (time_hour > 12 & time_hour <= 15)
                 Console.WriteLine("Good day, guys");
-            else if (x => 15 & x <= 22)
-                Console.WriteLine("Good day, guys");
-            else;
+            else if (time_hour > 15 & time_hour <= 22)
+                Console.WriteLine("Good evening, guys");
+ 
+            Console.Read();
         }
     }
 }
