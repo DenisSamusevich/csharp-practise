@@ -10,18 +10,19 @@ namespace for_letters_count
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Введите английское слово");
-            string world = Console.ReadLine();
+            Console.WriteLine("Input english word");
+            string word = Console.ReadLine();
             int s = 0;
-            for (int i = 0; i < world.Length; i++)
+            for (int i = 0; i < word.Length; i++)
             {
-                if (world[i] == "a")
+                if (word[i] == 'a'|| word[i]=='A')
                     s += 1;
-         
             }
             if (s == 0)
-                Console.WriteLine("В данном слове нет букв 'a'");
-            Console.WriteLine("В данном слове " + s + " букв 'a'");
+                Console.WriteLine("Word not have 'a'");
+            else
+                Console.WriteLine("Word have " + s + " 'a'");
+            Console.Read();
         }
     }
 }
