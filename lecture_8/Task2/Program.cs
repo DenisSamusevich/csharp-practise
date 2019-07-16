@@ -20,9 +20,12 @@ namespace Task2
             Console.WriteLine(massiv[0]);
             Console.WriteLine(massiv[1]);
             Console.WriteLine(massiv[2]);
+            massiv[0] = (int)massiv[0] + 10;
+            massiv[2] = (string)massiv[2] + ", guys!";
+            Console.WriteLine(massiv[0]);
+            Console.WriteLine(massiv[1]);
+            Console.WriteLine(massiv[2]);
             Console.ReadLine();
-
-
         }
     }
 }
