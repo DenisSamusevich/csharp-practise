@@ -8,7 +8,7 @@ namespace lecture_13
 {
     internal class Shape
     {
-        public virtual double Square()
+        public virtual double Area()
         {
             return 0;
         }
@@ -22,10 +22,10 @@ namespace lecture_13
             Radius = radius;
         }
 
-        public override double Square()
+        public override double Area()
         {
-            double square = Math.PI * Radius * Radius;
-            return square;
+            double area = Math.PI * Radius * Radius;
+            return area;
         }
     }
     internal class ShapeSquare : Shape
@@ -37,10 +37,10 @@ namespace lecture_13
             Side = side;
         }
 
-        public override double Square()
+        public override double Area()
         {
-            double square = Math.PI * Side * Side;
-            return square;
+            double area = Side * Side;
+            return area;
         }
     }
     internal class ShapeTriangle : Shape
@@ -54,10 +54,10 @@ namespace lecture_13
             Height = height;
         }
 
-        public override double Square()
+        public override double Area()
         {
-            double square = Math.PI * Side * Side;
-            return square;
+            double area = Side * Height/2;
+            return area;
         }
     }
 }
